@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Target, TrendingUp, Users, MessageSquare } from 'lucide-react';
+import Hero from '../components/Hero';
 
 const Home = () => {
   const features = [
@@ -28,18 +29,7 @@ const Home = () => {
 
   return (
     <div>
-      <section className="hero">
-        <div className="container">
-          <h1>Empower Your Future Beyond the Family Business</h1>
-          <p>
-            Find your path forward with coaching, courses, and mediation services designed 
-            specifically for next-generation family members.
-          </p>
-          <Link to="/register" className="btn btn-primary" style={{ fontSize: '18px', padding: '16px 32px' }}>
-            Start Your Journey
-          </Link>
-        </div>
-      </section>
+      <Hero />
 
       <section className="features">
         <div className="container">
