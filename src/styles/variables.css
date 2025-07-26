@@ -35,6 +35,12 @@
   --gray-700: #334155;
   --gray-800: #1e293b;
   --gray-900: #0f172a;
+  
+  /* High contrast text colors for better readability */
+  --text-primary: #111827;
+  --text-secondary: #374151;
+  --text-tertiary: #6b7280;
+  --text-inverse: #ffffff;
 
   /* Colors - Status */
   --success-50: #f0fdf4;
@@ -153,6 +159,16 @@
   --breakpoint-2xl: 1536px;
 }
 
+/* Responsive typography */
+@media (max-width: 768px) {
+  :root {
+    --font-size-3xl: 1.5rem;
+    --font-size-4xl: 1.875rem;
+    --font-size-5xl: 2.25rem;
+    --font-size-6xl: 2.5rem;
+  }
+}
+
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
   :root {
@@ -166,6 +182,11 @@
     --gray-700: #e2e8f0;
     --gray-800: #f1f5f9;
     --gray-900: #f8fafc;
+    
+    /* Update text colors for dark mode */
+    --text-primary: #f8fafc;
+    --text-secondary: #e2e8f0;
+    --text-tertiary: #cbd5e1;
+    --text-inverse: #111827;
   }
 }
-
